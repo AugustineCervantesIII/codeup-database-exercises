@@ -15,11 +15,11 @@ SELECT DISTINCT first_name, last_name FROM employees WHERE last_name like 'e%e' 
 
 
 # Find the unique last names with a 'q' but not 'qu'. Your results should be:
-SELECT DISTINCT last_name FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%QU%' GROUP BY last_name;
+SELECT DISTINCT last_name FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name;
 
 
 # Add a COUNT() to your results and use ORDER BY to make it easier to find employees whose unusual name is shared with others.
-SELECT last_name, COUNT(*) FROM employees WHERE last_name LIKE '%Q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name;
+SELECT last_name, COUNT(*) FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name;
 
 
 # Update your query for 'Irena', 'Vidya', or 'Maya'. Use count(*) and GROUP BY
