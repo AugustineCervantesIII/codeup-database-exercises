@@ -17,3 +17,6 @@ UPDATE products SET name = 'iPhone 11 Pro Max', price = 1500 WHERE id = 5;
 UPDATE products SET price = 800 WHERE id = 6;
 
 UPDATE products SET price = 6000 WHERE id = 7;
+
+# This code add apple name to all the rows for brand column
+UPDATE products SET brand = 'Apple' WHERE brand = '';
